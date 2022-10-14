@@ -1,0 +1,109 @@
+body{
+    background-color: #404040;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo,a,.dropdown{
+    color: white;
+}
+nav{
+    position: relative;
+    height: 75px;
+    line-height: 75px;
+    background-color: rgb(32, 27, 27);
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom:2px solid lightblue ;
+}
+nav .navbar{
+    position: relative;
+    display: flex;
+    height: 75px;
+    line-height: 75px;
+    background-color: rgb(32, 27, 27);
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom:2px solid lightblue ;
+}
+nav .list > ul {
+    display: flex;
+}
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(32, 27, 27);
+    color: white;
+    min-width: 45px;
+    padding: 10px 25px;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.research{
+    margin-left: 20ch;
+}
+.research input, .research button{
+    height: 60px;
+    border-radius:5px ;
+    font-size: 20px;
+}
+.research button{
+    background-color: rgb(32, 27, 27);
+    color: green;
+    border: 1px solid;
+}
+.research button:hover{
+    background-color: green;
+    color: white;
+}
+
+.button button{
+    background-color: rgb(32, 27, 27);
+    color: rgba(255, 255, 255,0.3);
+    font-size: 20px;
+}
+nav >.hidden  > .hamburger {
+    display: none;
+    padding-top: 15px ;
+    padding-left: 15px;
+}
+nav .hamburger .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: white;
+}
+@media (max-width: 768px){
+    nav > .navbar{
+     display: none;
+    }
+     nav .hamburger {
+         display: grid !important;
+         position: relative;
+     }
+     input{
+         display:none ;
+     }
+     nav .hamburger::after{
+         content: "Navbar";
+         color: white;
+         position: absolute;
+         right: 45vw;
+         
+     }
+ }
+
