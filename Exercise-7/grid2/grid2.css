@@ -28,7 +28,7 @@ body{
 #orange{
     grid-column: 1/5;
 }
-#yellow > ul{
+#yellow > ul, #red > ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr;
@@ -37,19 +37,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#yellow > ul li{
-    width: 3em;
-}
-#red > ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#red > ul li{
+#yellow > ul li, #red > ul li{
     width: 3em;
 }
 
