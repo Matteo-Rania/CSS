@@ -1,0 +1,13 @@
+body{
+    display: flex;
+}
+#orange{
+    width: 200%;
+    order: 1
+}
+#blue{
+    order: 1;
+}
+#green{
+    order: 1;
+}
