@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.aside{
+    width: 200px;
+    height: 100vh;
+background-color: #404040;
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.logo{
+    text-align: center;
+    width: 80px;
+    background-color: #9d4d4d;
+    margin: 0 auto;
+    margin-bottom: 1ch;
+    color: white;
+    font-size: 24px;
+}
+.links{
+    display: inline;
+    color: #2b2b2b;
+    margin-top:1.5ch;
+    margin-left: 1ch;
+}
+.links > div{
+    padding: 1ch;
+    text-align: center;
+}
+a{
+    color: #2b2b2b;
+    font-size: 24px;
+    text-decoration: none;
+}
+a:hover{
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+.links{
+    word-spacing: 1px;
+    padding-top: 1.5ch;
+}
+.avatar{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    padding-bottom: 1ch;
+    
+}
+.avatar >img{
+    width:100px;
+}
+.avatar > p{
+    text-align: center;
+    font-size: 24px;
+}
